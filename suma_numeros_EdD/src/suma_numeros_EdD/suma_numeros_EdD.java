@@ -15,7 +15,16 @@ public class suma_numeros_EdD {
 		int suma = numero1 + numero2;
 		System.out.println("La suma da como resultado " + suma);
 		
-		scanner.close();
-	}
+        System.out.print("Introduce un número: ");
+        int numero = scanner.nextInt();
 
+        if (numero % 2 == 0) {
+            System.out.println("El número " + numero + " es par.");
+        } else {
+            System.out.println("El número " + numero + " es impar.");
+        }
+
+        // Cerrar el escáner
+        scanner.close();
+    }
 }
